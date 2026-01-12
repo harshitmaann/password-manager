@@ -1,15 +1,49 @@
-# Python
+# Python bytecode
 __pycache__/
 *.py[cod]
+*$py.class
+
+# C extensions
 *.so
-*.egg-info/
-dist/
+
+# Distribution / packaging
+.Python
 build/
+dist/
+*.egg-info/
+.eggs/
+wheelhouse/
+
+# Virtual environments
 .venv/
 venv/
+ENV/
+
+# Environment files
 .env
 .env.*
+
+# Database and local data
 *.sqlite3
+*.db
+*.log
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Type checking and linting
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
 
 # macOS
 .DS_Store
@@ -17,3 +51,7 @@ venv/
 # Editors
 .vscode/
 .idea/
+
+# Optional: ignore local secrets or vault exports if you ever create them in the repo
+*.pmgr
+*.vault
